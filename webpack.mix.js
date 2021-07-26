@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,11 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        require('postcss-import'),
-        require('tailwindcss'),
-    ]);
+mix.js("resources/assets/js/app.js", "public/js").sourceMaps();
+mix.sass("resources/assets/sass/app.scss", "public/css", {
+    implementation: require("node-sass"),
+});
 
 if (mix.inProduction()) {
     mix.version();
