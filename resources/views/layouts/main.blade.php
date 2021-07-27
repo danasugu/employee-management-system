@@ -21,6 +21,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 </head>
 
@@ -77,7 +78,7 @@
                 </a>
                 <div id="collapseUser" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="py-2 bg-white rounded collapse-inner">
-                        <a class="collapse-item" href="{{ route('users.index') }}">Users</a>
+                        <a class="collapse-item" href="">Users</a>
                         <a class="collapse-item" href="cards.html">Role</a>
                         <a class="collapse-item" href="cards.html">Permission</a>
                     </div>
