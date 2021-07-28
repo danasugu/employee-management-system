@@ -23,5 +23,5 @@ Route::get('/', function () {
 
 Route::middleware(('auth:sancum','verified'))->group(function() {
     Route::view('dashboard', 'dashboard')->name('dashboard');
-    Route
+    Route::get('/users', UserIndex::class)->name('users.index');
 });
