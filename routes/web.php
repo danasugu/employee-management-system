@@ -23,4 +23,5 @@ Route::get('/', function () {
 
 Route::middleware(('auth:sancum','verified'))->group(function() {
     Route::view('dashboard', 'dashboard')->name('dashboard');
+    Route
 });
