@@ -9,6 +9,6 @@ class UserIndex extends Component
     public function render()
     {
         return view('livewire.users.user-index');
-        ->layout('layout.base');
+        ->layout('layout.main');
     }
 }
