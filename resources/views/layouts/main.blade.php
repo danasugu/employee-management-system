@@ -79,7 +79,7 @@
                 </a>
                 <div id="collapseUser" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="py-2 bg-white rounded collapse-inner">
-                        <a class="collapse-item" href="{{ route('users.index') }}">Users</a>
+                        {{-- <a class="collapse-item" href="{{ route('users.index') }}">Users</a> --}}
                         <a class="collapse-item" href="cards.html">Role</a>
                         <a class="collapse-item" href="cards.html">Permission</a>
                     </div>
@@ -148,7 +148,7 @@
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
                     <div class="my-auto text-center copyright">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; EmployeeManagementSystem 2021</span>
                     </div>
                 </div>
             </footer>
