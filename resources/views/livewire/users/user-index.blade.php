@@ -1,9 +1,9 @@
    <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Users</h1>
+    <div class="mb-4 d-sm-flex align-items-center justify-content-between">
+        <h1 class="mb-0 text-gray-800 h3">Users</h1>
     </div>
     <div class="row">
-        <div class="card  mx-auto">
+        <div class="mx-auto card">
             <div>
                 @if (session()->has('message'))
                     <div class="alert alert-success">
@@ -17,17 +17,17 @@
                         <form method="GET" action="{{ route('users.index') }}">
                             <div class="form-row align-items-center">
                                 <div class="col">
-                                    <input type="search" name="search" class="form-control mb-2" id="inlineFormInput"
+                                    <input type="search" name="search" class="mb-2 form-control" id="inlineFormInput"
                                         placeholder="Jane Doe">
                                 </div>
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary mb-2">Search</button>
+                                    <button type="submit" class="mb-2 btn btn-primary">Search</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div>
-                        <a href="{{ route('users.create') }}" class="btn btn-primary mb-2">Create</a>
+                        <a href="{{ route('users.create') }}" class="mb-2 btn btn-primary">Create</a>
                     </div>
                 </div>
             </div>

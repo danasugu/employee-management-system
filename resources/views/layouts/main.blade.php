@@ -79,7 +79,7 @@
                 </a>
                 <div id="collapseUser" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="py-2 bg-white rounded collapse-inner">
-                        <a class="collapse-item" href="{{ route('user.index')}}">Users</a>
+                        <a class="collapse-item" href="{{ route('user.index') }}">Users</a>
                         <a class="collapse-item" href="cards.html">Role</a>
                         <a class="collapse-item" href="cards.html">Permission</a>
                     </div>
@@ -117,7 +117,7 @@
                             <div class="shadow dropdown-menu dropdown-menu-right animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                         document.getElementById('logout-form').submit();">
+                                    document.getElementById('logout-form').submit();">
                                     <i class="mr-2 text-gray-400 fas fa-sign-out-alt fa-sm fa-fw"></i>
                                     {{ __('Logout') }}
                                 </a>
