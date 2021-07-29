@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Users;
 
 use Livewire\Component;
+use App\Models\User;
 
 class UserIndex extends Component
 {
