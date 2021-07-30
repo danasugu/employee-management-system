@@ -12,6 +12,10 @@ class UserIndex extends Component
 
      public function render()
     {
+        $users = User::all();
+        if(strlen($this->search) > 2) {
+            
+        }
         return view('livewire.users.user-index', [
             'users'=>User::all()
         ])
