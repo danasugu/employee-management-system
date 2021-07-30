@@ -8,6 +8,8 @@ use Livewire\Component;
 
 class UserIndex extends Component
 {
+     public $search ='';
+
      public function render()
     {
         return view('livewire.users.user-index', [
