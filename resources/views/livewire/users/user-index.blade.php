@@ -48,7 +48,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($users as $user)
+                        @forelse ($users as $user)
                             <tr>
                                 <th scope="row">{{ $user->id }}</th>
                                 <td>{{ $user->username }}</td>
@@ -57,7 +57,9 @@
                                     <a href="" class="btn btn-success">Edit</a>
                                 </td>
                             </tr>
-                        @endforeach
+                            @empty
+                            <tr><th>No results</th></tr>
+                        @endforelse
                     </tbody>
                 </table>
             </div>
