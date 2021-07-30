@@ -1,3 +1,4 @@
+  <div>
    <!-- Page Heading -->
     <div class="mb-4 d-sm-flex align-items-center justify-content-between">
         <h1 class="mb-0 text-gray-800 h3">Users</h1>
@@ -20,9 +21,9 @@
                                     <input type="search" wire:model="search" class="mb-2 form-control" id="inlineFormInput"
                                         placeholder="Jane Doe">
                                 </div>
-                                <div class="col">
+                                {{-- <div class="col">
                                     <button type="submit" class="mb-2 btn btn-primary">Search</button>
-                                </div>
+                                </div> --}}
                             </div>
                         </form>
                     </div>
@@ -57,3 +58,4 @@
             </div>
         </div>
     </div>
+</div> 
