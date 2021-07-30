@@ -17,7 +17,7 @@
                         <form method="GET" action="{{ route('users.index') }}">
                             <div class="form-row align-items-center">
                                 <div class="col">
-                                    <input type="search" name="search" class="mb-2 form-control" id="inlineFormInput"
+                                    <input type="search" wire:model="search" class="mb-2 form-control" id="inlineFormInput"
                                         placeholder="Jane Doe">
                                 </div>
                                 <div class="col">
