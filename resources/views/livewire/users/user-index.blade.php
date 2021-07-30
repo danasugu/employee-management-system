@@ -41,18 +41,18 @@
                             <th scope="col">Manage</th>
                         </tr>
                     </thead>
-                    {{-- <tbody>
-                        @foreach ($users as $user)
+                    <tbody>
+                        
                             <tr>
-                                <th scope="row">{{ $user->id }}</th>
-                                <td>{{ $user->username }}</td>
-                                <td>{{ $user->email }}</td>
+                                <th scope="row"> </th>
+                                <td> </td>
+                                <td> </td>
                                 <td>
                                     <a href="" class="btn btn-success">Edit</a>
                                 </td>
                             </tr>
-                        @endforeach
-                    </tbody> --}}
+                     
+                    </tbody>
                 </table>
             </div>
         </div>
