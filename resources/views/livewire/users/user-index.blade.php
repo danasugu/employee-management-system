@@ -21,6 +21,9 @@
                                     <input type="search" wire:model="search" class="mb-2 form-control" id="inlineFormInput"
                                         placeholder="Jane Doe">
                                 </div>
+                                <div class="spinner-border text-danger" role="status">
+  <span class="visually-hidden"> </span>
+</div>
                                 {{-- <div class="col">
                                     <button type="submit" class="mb-2 btn btn-primary">Search</button>
                                 </div> --}}
