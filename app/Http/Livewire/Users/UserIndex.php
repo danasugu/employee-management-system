@@ -10,9 +10,7 @@ class UserIndex extends Component
 {
      public function render()
     {
-        return view('livewire.users.user-index', [
-            'users' => $users
-        ])
+        return view('livewire.users.user-index')
             ->layout('layouts.main');
     }
 }
