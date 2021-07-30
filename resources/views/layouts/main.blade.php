@@ -23,7 +23,7 @@
     <link href="{{ asset('css/sb-admin.min.css') }}" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
  
-    @@livewireStyles
+    @livewireStyles
 
 </head>
 
@@ -174,7 +174,7 @@
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('js/sb-admin.min.js') }}"></script>
 
-    @livewireScripts()
+    @livewireScripts
 
 </body>
 
