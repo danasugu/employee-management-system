@@ -27,7 +27,7 @@
                         </form>
                     </div>
                     <div>
-                        <a href="{{ route('users.create') }}" class="mb-2 btn btn-primary">Create</a>
+                        <a href="" class="mb-2 btn btn-primary">Create</a>
                     </div>
                 </div>
             </div>
@@ -41,18 +41,18 @@
                             <th scope="col">Manage</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    {{-- <tbody>
                         @foreach ($users as $user)
                             <tr>
                                 <th scope="row">{{ $user->id }}</th>
                                 <td>{{ $user->username }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>
-                                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-success">Edit</a>
+                                    <a href="" class="btn btn-success">Edit</a>
                                 </td>
                             </tr>
                         @endforeach
-                    </tbody>
+                    </tbody> --}}
                 </table>
             </div>
         </div>
