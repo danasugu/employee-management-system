@@ -42,16 +42,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        @foreach ($users as $user)
                             <tr>
-                                <th scope="row"> </th>
-                                <td> </td>
-                                <td> </td>
+                                <th scope="row">{{ $user->id }}</th>
+                                <td>{{ $user->username }}</td>
+                                <td>{{ $user->email }}</td>
                                 <td>
                                     <a href="" class="btn btn-success">Edit</a>
                                 </td>
                             </tr>
-                     
+                        @endforeach
                     </tbody>
                 </table>
             </div>
