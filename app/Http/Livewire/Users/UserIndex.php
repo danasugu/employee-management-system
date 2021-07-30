@@ -14,7 +14,7 @@ class UserIndex extends Component
     {
         $users = User::all();
         if(strlen($this->search) > 2) {
-            
+            $users = User::where('username', 'like', "%{$this->search}%")->get();
         }
         return view('livewire.users.user-index', [
             'users'=>User::all()
