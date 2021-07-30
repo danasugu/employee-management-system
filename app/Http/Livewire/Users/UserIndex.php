@@ -17,7 +17,7 @@ class UserIndex extends Component
             $users = User::where('username', 'like', "%{$this->search}%")->get();
         }
         return view('livewire.users.user-index', [
-            'users'=>User::all()
+            'users'=>users
         ])
             ->layout('layouts.main');
     }
