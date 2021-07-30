@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/users', UserIndex::class)->name('users.index');
+// Route::get('/users', UserIndex::class)->name('users.index');
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
@@ -31,7 +31,7 @@ Route::get('/users', UserIndex::class)->name('users.index');
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::view('/dashboard', 'dashboard')->name('dashboard');
-    // Route::get('/users', UserIndex::class)->name('users.index');
+    Route::get('/users', UserIndex::class)->name('users.index');
     // Route::get('/countries', CountryIndex::class)->name('countries.index');
     // Route::get('/states', StateIndex::class)->name('states.index');
     // Route::get('/cities', CityIndex::class)->name('cities.index');

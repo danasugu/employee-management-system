@@ -7,11 +7,11 @@ use Livewire\Component;
 
 class UserIndex extends Component
 {
-    public function render()
+     public function render()
     {
-       return view('livewire.users.user-index', [
+        return view('livewire.users.user-index', [
             'users' => $users
         ])
-                 ->layout('layouts.main');
+            ->layout('layouts.main');
     }
 }
