@@ -176,6 +176,13 @@
 
     @stack('modals')
     @livewireScripts
+    <script>
+        window.addEventListener('closeModal', event => 
+        {
+            // alert('Name updated to: ' + event.detail.newName);
+            $('exampleModal').modal('hide')
+        })
+        </script>
 
 </body>
 
