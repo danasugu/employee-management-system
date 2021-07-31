@@ -102,10 +102,10 @@
                                     class="col-md-4 col-form-label text-md-right">{{ __('First Name') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="first_name" type="text"
-                                        class="form-control @error('name') is-invalid @enderror" name="firstName">
+                                    <input id="firstName" type="text"
+                                        class="form-control @error('name') is-invalid @enderror" wire:model="firstName">
 
-                                    @error('first_name')
+                                    @error('firstName')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -118,11 +118,10 @@
                                     class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="last_name" type="text"
-                                        class="form-control @error('name') is-invalid @enderror" name="last_name"
-                                        value="{{ old('last_name') }}" required autocomplete="last_name" autofocus>
+                                    <input id="lastName" type="text"
+                                        class="form-control @error('name') is-invalid @enderror" wire:model="lasName">
 
-                                    @error('last_name')
+                                    @error('lastName')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
