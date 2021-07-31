@@ -114,12 +114,12 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="last_name"
+                                <label for="lastName"
                                     class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="lastName" type="text"
-                                        class="form-control @error('name') is-invalid @enderror" wire:model="lasName">
+                                        class="form-control @error('name') is-invalid @enderror" wire:model="lastName">
 
                                     @error('lastName')
                                         <span class="invalid-feedback" role="alert">
@@ -163,7 +163,7 @@
                             </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" wire:click="StoreUser()">Save user</button>
+        <button type="button" class="btn btn-primary" wire:click="storeUser()">Save user</button>
       </div>
     </div>
   </div>
