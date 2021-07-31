@@ -24,11 +24,11 @@ class UserIndex extends Component
          $this ->validate();
 
          User::create([
-             'username' = $this->username,
-             'firstName' = $this->firstName,
-             'lastName' = $this->lastName,
-             'email' = $this->email,
-             'password' = Hash::make($this->password),
+             'username' => $this->username,
+             'firstName' => $this->firstName,
+             'lastName' => $this->lastName,
+             'email' => $this->email,
+             'password' => Hash::make($this->password),
          ]);
          $this->reset();
      }
