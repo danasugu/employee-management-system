@@ -28,9 +28,9 @@ class UserIndex extends Component
              'firstName' = $this->firstName,
              'lastName' = $this->lastName,
              'email' = $this->email,
-             'password' = hash::make($this->password),
-         ])
-
+             'password' = Hash::make($this->password),
+         ]);
+         $this->reset();
      }
 
     public function render()
