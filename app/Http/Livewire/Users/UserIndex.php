@@ -9,6 +9,7 @@ use Livewire\Component;
 class UserIndex extends Component
 {
      public $search = '';
+     public $username, $firstName, $lastName, $email, $password;
 
     public function render()
     {
