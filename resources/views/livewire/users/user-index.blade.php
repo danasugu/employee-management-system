@@ -79,15 +79,13 @@
       </div>
       <div class="modal-body">
         <form>
-                    
-
                             <div class="form-group row">
                                 <label for="username"
                                     class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="username" type="text"
-                                        class="form-control @error('name') is-invalid @enderror" wire:model="username">
+                                        class="form-control @error('name') is-invalid @enderror" wire:model.defer="username">
 
                                     @error('username')
                                         <span class="invalid-feedback" role="alert">
@@ -103,7 +101,7 @@
 
                                 <div class="col-md-6">
                                     <input id="firstName" type="text"
-                                        class="form-control @error('name') is-invalid @enderror" wire:model="firstName">
+                                        class="form-control @error('name') is-invalid @enderror" wire:model.defer="firstName">
 
                                     @error('firstName')
                                         <span class="invalid-feedback" role="alert">
@@ -119,7 +117,7 @@
 
                                 <div class="col-md-6">
                                     <input id="lastName" type="text"
-                                        class="form-control @error('name') is-invalid @enderror" wire:model="lastName">
+                                        class="form-control @error('name') is-invalid @enderror" wire:model.defer="lastName">
 
                                     @error('lastName')
                                         <span class="invalid-feedback" role="alert">
@@ -135,7 +133,7 @@
 
                                 <div class="col-md-6">
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
-                                        wire:model="email">
+                                        wire:model.defer="email">
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -151,7 +149,7 @@
 
                                 <div class="col-md-6">
                                     <input id="password" type="password"
-                                        class="form-control @error('password') is-invalid @enderror" wire:model="password">
+                                        class="form-control @error('password') is-invalid @enderror" wire:model.defer="password">
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">

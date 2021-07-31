@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Users;
 
 use App\Models\User;
 use Livewire\Component;
+use Illuminate\Support\Facades\Hash;
 
 
 class UserIndex extends Component
@@ -25,10 +26,10 @@ class UserIndex extends Component
 
          User::create([
              'username' => $this->username,
-             'firstName' => $this->firstName,
-             'lastName' => $this->lastName,
+             'first_name' => $this->firstName,
+             'last_name' => $this->lastName,
              'email' => $this->email,
-             'password' => Hash::make($this->password),
+             'password' =>  Hash::make($this->password),
          ]);
          $this->reset();
      }
