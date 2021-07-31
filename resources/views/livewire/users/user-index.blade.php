@@ -88,7 +88,7 @@
                                 <div class="col-md-6">
                                     <input id="username" type="text"
                                         class="form-control @error('name') is-invalid @enderror" wire:model="username"
-                                        value="{{ old('username') }}" required autocomplete="username" autofocus>
+                                        value="{{ old('username') }}">
 
                                     @error('username')
                                         <span class="invalid-feedback" role="alert">
