@@ -11,6 +11,16 @@ class UserIndex extends Component
      public $search = '';
      public $username, $firstName, $lastName, $email, $password;
 
+     protected $rules = [
+        'username' => 'required|min:6',
+        'email' => 'required|email',
+    ];
+
+
+     public function storeUser() {
+
+     }
+
     public function render()
     {
         $users = User::paginate(5);

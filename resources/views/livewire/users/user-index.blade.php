@@ -163,7 +163,7 @@
                             </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save user</button>
+        <button type="button" class="btn btn-primary" wire:click="StoreUser()">Save user</button>
       </div>
     </div>
   </div>
