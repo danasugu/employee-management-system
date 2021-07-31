@@ -12,8 +12,11 @@ class UserIndex extends Component
      public $username, $firstName, $lastName, $email, $password;
 
      protected $rules = [
-        'username' => 'required|min:6',
+        'username' => 'required',
+        'firstName' => 'required',
+        'lastName' => 'required',
         'email' => 'required|email',
+        'password' => 'required',
     ];
 
 
