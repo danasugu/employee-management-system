@@ -21,6 +21,15 @@ class UserIndex extends Component
 
 
      public function storeUser() {
+         $this ->validate();
+
+         User::create([
+             'username' = $this->username,
+             'firstName' = $this->firstName,
+             'lastName' = $this->lastName,
+             'email' = $this->email,
+             'password' = hash::make($this->password),
+         ])
 
      }
 
