@@ -78,8 +78,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="POST" action="{{ route('users.store') }}">
-                            @csrf
+        <form>
+                    
 
                             <div class="form-group row">
                                 <label for="username"
