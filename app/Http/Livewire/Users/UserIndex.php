@@ -32,6 +32,7 @@ class UserIndex extends Component
              'password' =>  Hash::make($this->password),
          ]);
          $this->reset();
+         $this->dispatchBrowserEvent('closeModal');
      }
 
     public function render()
