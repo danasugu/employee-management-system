@@ -37,6 +37,9 @@ class UserIndex extends Component
 
     public function showEditModal($id) {
         $this->reset();
+        //find user
+        //load user
+        //open modal
     }
 
     public function render()
