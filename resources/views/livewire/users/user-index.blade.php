@@ -57,7 +57,7 @@
                                 <td>{{ $user->username }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>
-                                    <button class="btn btn-success">Edit</button>
+                                    <button wire:click="showEditModal" class="btn btn-success">Edit</button>
                                 </td>
                             </tr>
                             @empty
