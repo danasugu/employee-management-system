@@ -57,7 +57,7 @@
                                 <td>{{ $user->username }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>
-                                    <a href="" class="btn btn-success">Edit</a>
+                                    <button class="btn btn-success">Edit</button>
                                 </td>
                             </tr>
                             @empty
