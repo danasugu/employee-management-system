@@ -35,8 +35,8 @@ class UserIndex extends Component
         $this->dispatchBrowserEvent('closeModal');
     }
 
-    public function showEditModal() {
-        
+    public function showEditModal($id) {
+        $this->reset();
     }
 
     public function render()
