@@ -9,10 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class UserIndex extends Component
 {
-     public $search = '';
-     public $username, $firstName, $lastName, $email, $password;
+    public $search = '';
+    public $username, $firstName, $lastName, $email, $password;
 
-     protected $rules = [
+    protected $rules = [
         'username' => 'required',
         'firstName' => 'required',
         'lastName' => 'required',
@@ -21,19 +21,23 @@ class UserIndex extends Component
     ];
 
 
-     public function storeUser() {
-         $this ->validate();
+    public function storeUser() {
+        $this ->validate();
 
-         User::create([
-             'username' => $this->username,
-             'first_name' => $this->firstName,
-             'last_name' => $this->lastName,
-             'email' => $this->email,
-             'password' =>  Hash::make($this->password),
-         ]);
-         $this->reset();
-         $this->dispatchBrowserEvent('closeModal');
-     }
+        User::create([
+            'username' => $this->username,
+            'first_name' => $this->firstName,
+            'last_name' => $this->lastName,
+            'email' => $this->email,
+            'password' =>  Hash::make($this->password),
+        ]);
+        $this->reset();
+        $this->dispatchBrowserEvent('closeModal');
+    }
+
+    public function showEditModal() {
+        
+    }
 
     public function render()
     {
@@ -44,6 +48,6 @@ class UserIndex extends Component
         return view('livewire.users.user-index', [
             'users' => $users
         ])
-                 ->layout('layouts.main');
+                ->layout('layouts.main');
     }
 }
