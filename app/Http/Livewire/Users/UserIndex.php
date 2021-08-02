@@ -45,7 +45,9 @@ class UserIndex extends Component
 
     public function loadUser()
     {
-
+        $user = User::find($this->userId);
+        $this->username = $user->username;
+        
     }
 
     public function render()
