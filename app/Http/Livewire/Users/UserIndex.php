@@ -40,6 +40,7 @@ class UserIndex extends Component
         //find user
         $this->userId= $id;
         //load user
+        $this->loadUser();
         //open modal
     }
 
