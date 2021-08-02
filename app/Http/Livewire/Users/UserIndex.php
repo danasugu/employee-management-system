@@ -43,6 +43,11 @@ class UserIndex extends Component
         //open modal
     }
 
+    public function loadUser()
+    {
+
+    }
+
     public function render()
     {
         $users = User::paginate(5);
