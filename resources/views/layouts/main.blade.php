@@ -184,6 +184,14 @@
         })
         </script>
 
+            <script>
+        window.addEventListener('showModal', event => 
+        {
+            // alert('Name updated to: ' + event.detail.newName);
+            $('exampleModal').modal('show')
+        })
+        </script>
+
 </body>
 
 </html>
