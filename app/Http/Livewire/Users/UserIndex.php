@@ -35,7 +35,25 @@ class UserIndex extends Component
         $this->dispatchBrowserEvent('closeModal');
     }
 
-
+    public function showEditModal($id)
+    {
+        $this->reset();
+        $this->editMode = true;
+        // find user
+        $this->userId = $id;
+        // load user
+        $this->loadUser();
+        // show Modal
+        $this->dispatchBrowserEvent('modal', ['modalId' => '#userModal', 'actionModal' => 'show']);
+    }
+    public function loadUser()
+    {
+        $user = User::find($this->userId);
+        $this->username = $user->username;
+        $this->firstName = $user->first_name;
+        $this->lastName = $user->last_name;
+        $this->email = $user->email;
+    }
 
     public function render()
     {
