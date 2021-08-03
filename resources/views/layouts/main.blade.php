@@ -180,7 +180,7 @@
         window.addEventListener('closeModal', event => 
         {
             // alert('Name updated to: ' + event.detail.newName);
-            $('exampleModal').modal('hide')
+            $('userModal').modal('hide')
         })
         </script>
 
@@ -188,7 +188,7 @@
         window.addEventListener('showModal', event => 
         {
             // alert('Name updated to: ' + event.detail.newName);
-            $('exampleModal').modal('show')
+            $('usereModal').modal('show')
         })
         </script>
 
