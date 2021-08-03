@@ -42,6 +42,7 @@ class UserIndex extends Component
         //load user
         $this->loadUser();
         //open modal
+        $this->dispatchBrowserEvent('showModal');
     }
 
     public function loadUser()
