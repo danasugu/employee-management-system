@@ -9,7 +9,21 @@ use Illuminate\Support\Facades\Hash;
 
 class UserIndex extends Component
 {
-   
+    public $search = '';
+    public $username;
+    public $firstName;
+    public $lastName;
+    public $email;
+    public $password;
+    public $userId;
+    public $editMode =false;
+    protected $rules = [
+        'username' => 'required',
+        'firstName' => 'required',
+        'lastName' => 'required',
+        'password' => 'required',
+        'email' => 'required|email',
+    ];
 
 
     public function storeUser() {
